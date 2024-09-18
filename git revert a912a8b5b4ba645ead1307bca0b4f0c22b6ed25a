@@ -1,0 +1,41 @@
+[33mcommit a912a8b5b4ba645ead1307bca0b4f0c22b6ed25a[m[33m ([m[1;36mHEAD -> [m[1;32mportfolio[m[33m, [m[1;31morigin/portfolio[m[33m)[m
+Author: sKumal2 <kumalsamir08@gmail.com>
+Date:   Wed Sep 18 13:27:45 2024 -0400
+
+    made my first model called portfolio and successfully migrated this using sqlmigrate
+
+[33mcommit af28d07ada5b5f83bbda62d003280540a586a19e[m
+Author: sKumal2 <kumalsamir08@gmail.com>
+Date:   Wed Sep 18 11:51:28 2024 -0400
+
+    Deleted branch portfolio using git branch -d portfolio and recovered using git branch -b portfolio
+
+[33mcommit 58cb5309830e8dd35b7216e89a4d8c79f153443a[m
+Author: sKumal2 <kumalsamir08@gmail.com>
+Date:   Wed Sep 18 11:42:28 2024 -0400
+
+    Made resume.html and added it to views and urls
+
+[33mcommit 0e1469e2e9c5e45ba4d0cd024c6974b7452a0116[m
+Author: sKumal2 <kumalsamir08@gmail.com>
+Date:   Wed Sep 18 11:30:10 2024 -0400
+
+    Commiting my templates branch code before merging with main branch
+
+[33mcommit 3bede7d4eb51d37eea217912b40949e01cbc875a[m
+Author: sKumal2 <kumalsamir08@gmail.com>
+Date:   Wed Sep 18 11:19:04 2024 -0400
+
+    I made my second template called contact.html in the polls app
+
+[33mcommit 621ae79d7385d66d0a6cf9233765fe985b6cdb30[m
+Author: sKumal2 <kumalsamir08@gmail.com>
+Date:   Wed Sep 18 10:54:05 2024 -0400
+
+    I am commiting on my new branch called old state and I added my first template here.
+
+[33mcommit 6b98511e8a9f384dfdad63c2aabf3005eb0bc8cd[m
+Author: sKumal2 <kumalsamir08@gmail.com>
+Date:   Sun Sep 15 13:42:26 2024 -0400
+
+    This is my first django app and I made a simple view and displayed it in the browser by migrating urls from polls to globalPolls
