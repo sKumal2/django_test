@@ -5,9 +5,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 
-def index(request):
-    return HttpResponse("Hello World! You're at the polls index.")
-
 def home(request):
     home = loader.get_template('home.html')
     return HttpResponse(home.render())
@@ -15,3 +12,7 @@ def home(request):
 def contact(request):
     contact = loader.get_template('contact.html')
     return HttpResponse(contact.render())
+
+def resume(request):
+    resume = loader.get_template('resume.html')
+    return HttpResponse(resume.render())
