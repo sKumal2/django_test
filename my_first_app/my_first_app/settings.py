@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls'
+    'portfolio',
+    'polls',
 ]
 
 MIDDLEWARE = [
@@ -94,11 +95,11 @@ WSGI_APPLICATION = 'my_first_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'samir',
+        'NAME': 'Details',
         'USER': 'postgres',
         'PASSWORD': 'samir@pgre09',
         'HOST': 'localhost',  # Replace with your PostgreSQL server's address if necessary
-        'PORT': '',          # Leave empty to use the default PostgreSQL port (usually 5432)
+        'PORT': '5432',       # Leave empty to use the default PostgreSQL port (usually 5432)
     }
 }
 
