@@ -20,3 +20,4 @@ def resume(request):
 def projects(request):
     projects = loader.get_template('projects.html')
     return HttpResponse(projects.render())
+
