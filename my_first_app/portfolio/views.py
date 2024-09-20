@@ -16,3 +16,7 @@ def contact(request):
 def resume(request):
     resume = loader.get_template('resume.html')
     return HttpResponse(resume.render())
+
+def projects(request):
+    projects = loader.get_template('projects.html')
+    return HttpResponse(projects.render())
