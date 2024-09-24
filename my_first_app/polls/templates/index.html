@@ -7,10 +7,12 @@
 </head>
 <body>
     <h2>This is index page of polls app.</h2>
+    <h3>Members List</h3>
     <ul>
     {% for x in home%}
-        <li>{{x.firstname}} {{x.lastname}} {{x.email}} {{x.phone}}</li>
+        <li><a href="details/{{x.id}}">{{x.firstname}} {{x.lastname}}</a></li>
     {% endfor %}
     </ul>
 </body>
 </html>
+
