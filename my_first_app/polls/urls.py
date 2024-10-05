@@ -7,5 +7,5 @@ urlpatterns = [
     path('<int:Question_id>/', views.details, name = 'details'),
     path("<int:Question_id>/", views.results, name="results"),
     path("<int:Question_id>/", views.vote, name= "vote"),
-    path('form', views.home, name= 'form'),
+    # path('', views.detail, name= 'form'),
 ]

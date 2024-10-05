@@ -1,3 +1,6 @@
+{%extends "master.html"%}
+
+{%block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,8 @@
     <h1>{{details.firstname}} {{details.lastname}}</h1>
     <p><br>Phone : {{details.phone}}</p>
     <p><br>Email : {{details.email}}</p>
-
+    {{question}}
     <a href="/polls/">Home</a>
 </body>
 </html>
+{%endblock%}
