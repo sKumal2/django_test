@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 import datetime
+from django.shortcuts import render, get_object_or_404
 
 # Create your models here.
 class Polls(models.Model):
@@ -23,5 +24,10 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choices
-    
+
+def Vote(request, que_id):
+    que = get_object_or_404(Question, pk = que_id)
+    return render(request, 'polls/vote.html', {'question', que})
+
+      
 
