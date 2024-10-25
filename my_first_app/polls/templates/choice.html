@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choices/{{que.id}}</title>
+</head>
+<body>
+    <h2>This page displays choices from the database</h2>
+    {%for choice in ch_text%}
+    {{choice.choice_text}}<br>
+    {%endfor%}
+</body>
+</html>
