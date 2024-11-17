@@ -9,7 +9,8 @@
     <h2>This page displays que from the database</h2>
     <!-- //import and display questions from the database -->
     <ul>
-        {% for que in que_text %}
+      {%if question%}
+        {% for que in question %}
         <style>
             a {
               text-decoration: none;
@@ -17,10 +18,12 @@
           </style>
           
           <ul>
-            <li><a href="{%url 'choice' question.id%}">{{que.que_text}} {{que.pub_date}}</a></li><br>
+              <li><a href="{%url "choice" que.id%}">{{que.que_text}} {{que.pub_date}}</a></li><br>
           </ul> 
           
         {% endfor %}
+      {% endif %}
+      
     </ul>
 
 </body>

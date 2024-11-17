@@ -6,9 +6,17 @@
     <title>Choices/{{que.id}}</title>
 </head>
 <body>
-    <h2>This page displays choices from the database</h2>
-    {%for choice in ch_text%}
-    {{choice.choice_text}}<br>
-    {%endfor%}
-</body>
+    <form action="" method="post">
+        <fieldset>
+        <legend><h2>{{question.que_text}}</h2>
+        </legend>
+        
+        {%for choice in question.choice_set.all%}
+        <input type="radio" name="choice" id="choice">
+        <label for="">{{choice.choice_text}}<br></label>
+        {%endfor%}
+    </fieldset>
+     </body>
+    </form>
+    
 </html>

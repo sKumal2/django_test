@@ -19,11 +19,11 @@ class Question(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 class Choice(models.Model):
-    que = models.ForeignKey(Question, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=100)
     votes = models.IntegerField(default=0)
     def __str__(self):
-        return self.choices
+        return self.choice_text
 
 def Vote(request, que_id):
     que = get_object_or_404(Question, pk = que_id)
